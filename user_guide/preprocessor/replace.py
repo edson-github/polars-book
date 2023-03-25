@@ -1,11 +1,8 @@
 import json
 import sys
 
-if len(sys.argv) > 1:
-    if sys.argv[1] == "supports":
-        sys.exit(0)
-    # sys.argv[2] is the renderer name
-
+if len(sys.argv) > 1 and sys.argv[1] == "supports":
+    sys.exit(0)
 context, book = json.load(sys.stdin)
 content = json.dumps(book)
 
