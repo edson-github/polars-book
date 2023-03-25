@@ -7,4 +7,4 @@ with open(f"{path}/col_selection.txt", "w") as f:
     f.write(f"{df[['a','b']]}\n")
 
 with open(f"{path}/row_selection.txt", "w") as f:
-    f.write(f"{df[0:2]}\n")
+    f.write(f"{df[:2]}\n")

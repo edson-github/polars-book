@@ -13,8 +13,8 @@ from .single_df import df as df_single
 from .single_df_plan import pl as _
 from .multiple_queries import dataframes
 
-with open(f"single_df.txt", "w") as f:
+with open("single_df.txt", "w") as f:
     f.write(f"{df_single}\n")
 
-with open(f"dataframes.txt", "w") as f:
+with open("dataframes.txt", "w") as f:
     f.write(f"{dataframes}\n")
